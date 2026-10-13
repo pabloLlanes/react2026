@@ -50,4 +50,11 @@ export const projects = [
     path: '/preferencias',
     tags: ['Context', 'useContext', 'createContext'],
   },
+  {
+    id: 8,
+    title: 'Rick and Morty con custom hook',
+    description: 'El mismo listado de personajes, pero el fetch vive en un hook propio: useFetch.',
+    path: '/rick-and-morty-hook',
+    tags: ['custom hooks', 'useFetch', 'useEffect', 'reutilizar lógica'],
+  },
 ]

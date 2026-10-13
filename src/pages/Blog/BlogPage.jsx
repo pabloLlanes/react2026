@@ -3,26 +3,9 @@ import PostCard from './components/PostCard.jsx'
 import Sidebar from './components/Sidebar.jsx'
 import BlogFooter from './components/BlogFooter.jsx'
 
-const posts = [
-  {
-    id: 1,
-    title: '¿Qué es el HTML semántico?',
-    date: '2026-10-01',
-    excerpt: 'Usar la etiqueta que describe el contenido, no solo la que se ve bien.',
-  },
-  {
-    id: 2,
-    title: 'header, main y footer',
-    date: '2026-10-03',
-    excerpt: 'Las tres partes básicas de cualquier página y cuándo usar cada una.',
-  },
-  {
-    id: 3,
-    title: 'article vs section',
-    date: '2026-10-05',
-    excerpt: 'article es contenido independiente; section agrupa contenido relacionado.',
-  },
-]
+// Los posts viven en su propio archivo .js: así la página queda más corta
+// y los datos se pueden reusar (o reemplazar por un fetch más adelante)
+import { posts } from './data/posts.js'
 
 // Esta página NO usa el Layout general: arma su propia estructura semántica
 //

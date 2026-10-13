@@ -2,6 +2,7 @@ import { Routes, Route } from 'react-router'
 import Layout from './components/Layout.jsx'
 import HomePage from './pages/Home/HomePage.jsx'
 import RickAndMortyPage from './pages/RickAndMorty/RickAndMortyPage.jsx'
+import RickAndMortyHookPage from './pages/RickAndMortyHook/RickAndMortyHookPage.jsx'
 import ExpensesPage from './pages/Expenses/ExpensesPage.jsx'
 import BlogPage from './pages/Blog/BlogPage.jsx'
 import SimpleLoginLayout from './pages/SimpleLogin/SimpleLoginLayout.jsx'
@@ -20,6 +21,7 @@ function App() {
       <Route element={<Layout />}>
         <Route path="/" element={<HomePage />} />
         <Route path="/rick-and-morty" element={<RickAndMortyPage />} />
+        <Route path="/rick-and-morty-hook" element={<RickAndMortyHookPage />} />
         <Route path="/gastos" element={<ExpensesPage />} />
 
         {/* Panel privado con login: las rutas se declaran acá mismo */}
